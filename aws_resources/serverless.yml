@@ -29,7 +29,7 @@ resources:
       Properties:
         Name: bpa
 
-    BpaUserPool:
+    BPAUserPool:
       Type: AWS::Cognito::UserPool
       Properties:
         UserPoolName: bpa-user-pool
@@ -41,13 +41,13 @@ resources:
   Outputs:
     UserPoolId:
       Value:
-        Ref: BpaUserPool
+        Ref: BPAUserPool
 
     UserPoolArn:
       Value:
-        Fn::GetAtt: [BpaUserPool, Arn]
+        Fn::GetAtt: [BPAUserPool, Arn]
       Export:
-        Name: BpaUserPool-arn
+        Name: BPAUserPool-arn
 
     BPAGatewayRestApiId:
       Value:
