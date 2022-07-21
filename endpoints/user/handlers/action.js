@@ -6,7 +6,7 @@ import {getAdminUserModel} from "../../../lib/admin-lib";
 import {
   addCognitoUserToGroup, disableCognitoUser, enableCognitoUser,
   listCognitoGroups, removeCognitoUserFromGroup, updateUserAttribute
-} from "../../../lib/cognito-lib";
+} from "../../../lib/aws-cognito-lib";
 
 const getOwnUser = async (user) => {
   if (isGuest(user)) return noAccess();

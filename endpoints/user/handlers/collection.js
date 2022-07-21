@@ -2,7 +2,7 @@ import {success, failure, noAccess} from '../../../lib/response-lib';
 import {logDebug, logError} from "../../../lib/logging-lib";
 import {isAdmin, isGuest, getClientUserModel} from "../../../lib/user-lib";
 import {getAdminUserModel} from "../../../lib/admin-lib";
-import {createCognitoUser, listCognitoUsers} from "../../../lib/cognito-lib";
+import {createCognitoUser, listCognitoUsers} from "../../../lib/aws-cognito-lib";
 import * as userQuery from '../../../queries/user-queries';
 
 const createUser = async (user, id, data) => {

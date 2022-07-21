@@ -1,7 +1,7 @@
 import {failure, noAccess, success} from '../../../lib/response-lib';
 import {logDebug, logError} from "../../../lib/logging-lib";
 import {isAdmin} from "../../../lib/user-lib";
-import {deleteCognitoUser} from "../../../lib/cognito-lib";
+import {deleteCognitoUser} from "../../../lib/aws-cognito-lib";
 import * as userQuery from '../../../queries/user-queries';
 
 const getUser = async (user, id) => {
